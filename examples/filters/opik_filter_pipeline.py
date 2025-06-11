@@ -45,7 +45,7 @@ class Pipeline:
                 "workspace": os.getenv("OPIK_WORKSPACE", "default"),
                 "project_name": os.getenv("OPIK_PROJECT_NAME", "default"),
                 "host": os.getenv(
-                    "OPIK_URL_OVERRIDE", "https://www.comet.com/opik/api"
+                    "OPIK_URL_OVERRIDE", "http://host.docker.internal:5173/api"
                 ),
                 "debug": os.getenv("DEBUG_MODE", "false").lower() == "true",
             }
